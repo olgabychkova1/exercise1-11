@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+ <body>
+<script>
+function  Chess(size) {
+     var a = "";
+     for(var i = 0; i < size; i++) {
+       for(var j = 0; j < size; j++) {
+         a += i % 2 === j % 2 ? "#" : " ";
+       }
+       a += "\n";
+     }
+     return a;
+}
+
+console.log(Chess(8));
+
+</script>
+ </body>
+
+</html>
